@@ -1,17 +1,32 @@
 .main-content  {
+
     .container {
+
+        background: purple;
+
         .album-list {
-            @include flex($jc: center, $wrap: wrap);
+
+            @include flex($jc: flex-start, $ai: center, $wrap: wrap);
+            margin-top: 20px;
+
             &__item {
+
+                $card_delta: 200px;
+                $card_width: ($container_width - $card_delta) / 3;
+
                 @include flex($dir: column, $jc: flex-start, $ai: center);
-                width: ($container_width - 200px) / 3;
-                height: 400px;
-                margin: 20px;
+                width: $card_width;
+                height: 450px;    
                 padding: 20px;
                 background: #000;
                 color: white;
                 text-align: center;
-                
+                margin: {
+                    top: 10px;
+                    left: $card_delta / 6;
+                    right: $card_delta / 6;
+                    bottom: 10px;
+                }
                 &__cover,
                 &__title,
                 &__author,
@@ -20,16 +35,16 @@
                 }
 
                 &__cover {
-                    margin-bottom: 5px;
+                    margin-bottom: 10px;
                 }
                 
                 &__title {
-                    font-size: 24px;
+                    font-size: 22px;
                     margin-bottom: 5px;
                 }
 
                 &__author {
-                    font-size: 18px;
+                    font-size: 16px;
                     margin-bottom: 2px;
                     color: #5c5c5c;
                 }
