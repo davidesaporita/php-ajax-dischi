@@ -1,0 +1,26 @@
+// ******* Mixins *******//
+
+
+
+// ******* Layout *******//
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: $body_bg;
+    font-family: $font_primary;
+}
+
+.container {
+    width: 1070px;
+    max-height: 100%;
+    margin: 0 auto;
+}
+
+// ******* Images *******//
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+

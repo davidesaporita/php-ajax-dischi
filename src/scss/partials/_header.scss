@@ -1,0 +1,14 @@
+.header {
+    width: 100%;
+    background: $header_bg;
+
+    .container {
+        height: $header_height;
+    }
+
+    &__logo {
+        display: inline-block;
+        height: $logo_height;
+        margin-top: ($header-height - $logo_height) / 2;
+    }
+}
