@@ -1,0 +1,42 @@
+.main-content  {
+    .container {
+        .album-list {
+            @include flex($jc: center, $wrap: wrap);
+            &__item {
+                @include flex($dir: column, $jc: center, $ai: center);
+                width: ($container_width - 200px) / 3;
+                height: 400px;
+                margin: 20px;
+                background: #000;
+                color: white;
+                
+                &__cover,
+                &__title,
+                &__author,
+                &__year {
+                    display: block;
+                }
+
+                &__cover {
+                    margin-bottom: 5px;
+                }
+                
+                &__title {
+                    font-size: 24px;
+                    margin-bottom: 5px;
+                }
+
+                &__author {
+                    font-size: 18px;
+                    margin-bottom: 2px;
+                    color: #5c5c5c;
+                }
+
+                &__year {
+                    font-size: 14px;
+                }
+            }
+        }
+    }
+}
+

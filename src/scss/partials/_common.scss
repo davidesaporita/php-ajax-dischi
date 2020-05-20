@@ -1,5 +1,12 @@
 // ******* Mixins *******//
-
+@mixin flex($dir: row, $jc: flex-start, $ai: center, $wrap: nowrap, $flex-basis: auto) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-basis: $flex-basis;
+    flex-wrap: $wrap;
+}
 
 
 // ******* Layout *******//
@@ -9,10 +16,11 @@ body {
     min-height: 100vh;
     background-color: $body_bg;
     font-family: $font_primary;
+    color: white;
 }
 
 .container {
-    width: 1070px;
+    width: $container_width;
     max-height: 100%;
     margin: 0 auto;
 }

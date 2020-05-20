@@ -4,11 +4,16 @@
   box-sizing: border-box;
 }
 
+ul {
+  list-style: none;
+}
+
 body {
   width: 100%;
   min-height: 100vh;
   background-color: #191919;
   font-family: "Lato", sans-serif;
+  color: white;
 }
 
 .container {
@@ -33,6 +38,46 @@ img {
   display: inline-block;
   height: 50px;
   margin-top: 10px;
+}
+
+.main-content .container .album-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-basis: auto;
+  flex-wrap: wrap;
+}
+.main-content .container .album-list__item {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-basis: auto;
+  flex-wrap: nowrap;
+  width: 290px;
+  height: 400px;
+  margin: 20px;
+  background: #000;
+  color: white;
+}
+.main-content .container .album-list__item__cover, .main-content .container .album-list__item__title, .main-content .container .album-list__item__author, .main-content .container .album-list__item__year {
+  display: block;
+}
+.main-content .container .album-list__item__cover {
+  margin-bottom: 5px;
+}
+.main-content .container .album-list__item__title {
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+.main-content .container .album-list__item__author {
+  font-size: 18px;
+  margin-bottom: 2px;
+  color: #5c5c5c;
+}
+.main-content .container .album-list__item__year {
+  font-size: 14px;
 }
 
 .test {
