@@ -40,9 +40,6 @@ img {
   margin-top: 10px;
 }
 
-.main-content .container {
-  background: purple;
-}
 .main-content .container .album-list {
   display: flex;
   flex-direction: row;

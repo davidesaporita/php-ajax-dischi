@@ -2,8 +2,6 @@
 
     .container {
 
-        background: purple;
-
         .album-list {
 
             @include flex($jc: flex-start, $ai: center, $wrap: wrap);
