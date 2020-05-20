@@ -51,15 +51,17 @@ img {
 .main-content .container .album-list__item {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-basis: auto;
   flex-wrap: nowrap;
   width: 290px;
   height: 400px;
   margin: 20px;
+  padding: 20px;
   background: #000;
   color: white;
+  text-align: center;
 }
 .main-content .container .album-list__item__cover, .main-content .container .album-list__item__title, .main-content .container .album-list__item__author, .main-content .container .album-list__item__year {
   display: block;

@@ -3,12 +3,14 @@
         .album-list {
             @include flex($jc: center, $wrap: wrap);
             &__item {
-                @include flex($dir: column, $jc: center, $ai: center);
+                @include flex($dir: column, $jc: flex-start, $ai: center);
                 width: ($container_width - 200px) / 3;
                 height: 400px;
                 margin: 20px;
+                padding: 20px;
                 background: #000;
                 color: white;
+                text-align: center;
                 
                 &__cover,
                 &__title,
