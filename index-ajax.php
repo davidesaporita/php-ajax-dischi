@@ -23,7 +23,7 @@
     </div>
 
     <!-- Handlebars Templates -->
-    <script id="item-template" type="text/x-handlebars-template">
+    <script id="template" type="text/x-handlebars-template">
         <li class="album-list__item">
             <img class="album-list__item__cover" 
                  src="{{ cover }}"

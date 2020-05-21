@@ -97,8 +97,28 @@ $(document).ready(function () {
   // Refs
   var albumList = $('.album-list'); // Init Handlebars 
 
-  var itemSource = $('#item-template').html();
-  var itemTemplate = Handlebars.template(source);
+  var source = $('#template').html();
+  var template = Handlebars.compile(source);
+  $.ajax({
+    url: 'partials/data/json-encoded.php',
+    method: 'GET',
+    success: function success(data) {
+      console.log(data);
+      data.forEach(function (element) {
+        var templateData = {
+          title: element.title,
+          author: element.author,
+          year: element.year,
+          cover: element.cover
+        };
+        var html = template(templateData);
+        albumList.append(html);
+      });
+    },
+    error: function error() {
+      console.log('Something goes wrong');
+    }
+  });
 });
 
 /***/ }),
