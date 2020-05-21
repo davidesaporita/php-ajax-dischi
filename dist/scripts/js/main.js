@@ -93,7 +93,13 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
+$(document).ready(function () {
+  // Refs
+  var albumList = $('.album-list'); // Init Handlebars 
 
+  var itemSource = $('#item-template').html();
+  var itemTemplate = Handlebars.template(source);
+});
 
 /***/ }),
 

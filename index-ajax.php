@@ -23,7 +23,7 @@
     </div>
 
     <!-- Handlebars Templates -->
-    <script id="result-template" type="text/x-handlebars-template">
+    <script id="item-template" type="text/x-handlebars-template">
         <li class="album-list__item">
             <img class="album-list__item__cover" 
                  src="{{ cover }}"
@@ -33,6 +33,11 @@
             <span class="album-list__item__year">{{ year }}</span>
         </li>
     </script>
+
+    <!-- JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.6/handlebars.min.js"></script>
+    <script src="dist/scripts/js/main.js"></script>
 
 </body>
 </html>
