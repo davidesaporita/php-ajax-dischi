@@ -26,8 +26,8 @@
     <script id="result-template" type="text/x-handlebars-template">
         <li class="album-list__item">
             <img class="album-list__item__cover" 
-                    src="{{ cover }}?>"
-                    alt="{{ title }}">
+                 src="{{ cover }}"
+                 alt="{{ title }}">
             <span class="album-list__item__title">{{ title }}</span>
             <span class='album-list__item__author'>{{ author }}</span>
             <span class="album-list__item__year">{{ year }}</span>
