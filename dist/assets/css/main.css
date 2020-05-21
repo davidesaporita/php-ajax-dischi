@@ -33,6 +33,18 @@ img {
 }
 .header .container {
   height: 70px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  flex-basis: auto;
+  flex-wrap: nowrap;
+}
+.header .container #search {
+  width: 250px;
+  height: 30px;
+  font-size: 14px;
+  padding: 4px;
 }
 .header__logo {
   display: inline-block;

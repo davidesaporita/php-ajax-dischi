@@ -7,27 +7,55 @@ $(document).ready( () => {
     var source = $('#template').html();    
     var template = Handlebars.compile(source);
 
-    $.ajax({
-        url: 'partials/data/json-encoded.php',
+    // Data
+    var jsonUrl = 'partials/data/json-encoded.php';
+    var settings = {
+        url: jsonUrl,
         method: 'GET',
-        success: function(data) {
-            console.log(data);
-            
-            data.forEach((element) => {
-                var templateData = {
-                    title:  element.title,
-                    author: element.author,
-                    year:   element.year,
-                    cover:  element.cover,
-                }
+        error: () => console.log('Something goes wrong')
+    };
 
-                var html = template(templateData);
-                albumList.append(html);
-                
+    // Ajax Call to populate result list
+    $.ajax(settings)
+        .done(data => {
+            data.forEach((element) => {
+                print(element);
             });
-        },
-        error: function() {
-            console.log('Something goes wrong');    
-        }
     });
+
+    // Event on keyup (input search)
+    $('#search').keyup( function() {
+        var self = $(this).val().trim().toLowerCase();
+        
+        // Clear result list
+        albumList.html('');
+
+        // Search
+        $.ajax(settings)
+            .done(data => {
+                data.forEach((element) => {
+                    var checkingTitle  = element.title.toLowerCase();
+                    var checkingAuthor = element.author.toLowerCase();
+                    var checkingYear   = element.year.toLowerCase();
+                    if(checkingTitle.includes(self) || checkingAuthor.includes(self) || checkingYear.includes(self)) {
+                        print(element);
+                    }
+                });
+            } // End of ajax.done()
+        ); // End of ajax
+    }); // End of Keyup Event
+
+    // Print via Handlebars template
+    function print(element) {       
+        var templateData = {
+            title:  element.title,
+            author: element.author,
+            year:   element.year,
+            cover:  element.cover,
+        }
+
+        var html = template(templateData);
+        albumList.append(html); 
+    }
+
 });

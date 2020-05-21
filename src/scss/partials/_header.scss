@@ -4,6 +4,13 @@
 
     .container {
         height: $header_height;
+        @include flex($jc: space-between);
+        #search {
+            width: 250px;
+            height: 30px;
+            font-size: 14px;
+            padding: 4px;
+        }
     }
 
     &__logo {
