@@ -45,12 +45,13 @@ $(document).ready( () => {
     }); // End of Keyup Event
 
     // Print via Handlebars template
-    function print(element) {       
+    function print(element) {        
         var templateData = {
             title:  element.title,
             author: element.author,
             year:   element.year,
             cover:  element.cover,
+            class:  "album-list__item--show"
         }
 
         var html = template(templateData);

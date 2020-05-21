@@ -80,6 +80,24 @@ img {
   background: #000;
   color: white;
   text-align: center;
+  -webkit-animation: lighten 0.3s linear;
+          animation: lighten 0.3s linear;
+}
+@-webkit-keyframes lighten {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+@keyframes lighten {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .main-content .container .album-list__item__cover, .main-content .container .album-list__item__title, .main-content .container .album-list__item__author, .main-content .container .album-list__item__year {
   display: block;

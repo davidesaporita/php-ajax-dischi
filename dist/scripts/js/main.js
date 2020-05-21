@@ -139,7 +139,8 @@ $(document).ready(function () {
       title: element.title,
       author: element.author,
       year: element.year,
-      cover: element.cover
+      cover: element.cover,
+      "class": "album-list__item--show"
     };
     var html = template(templateData);
     albumList.append(html);
