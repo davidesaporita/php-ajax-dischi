@@ -14,7 +14,7 @@ let mix = require('laravel-mix');
 mix.js('src/js/main.js', 'dist/scripts/js')
    .sass('src/scss/main.scss', 'dist/assets/css')
    .browserSync({ 
-        proxy: "http://localhost:80/php-ajax-dischi", 
+        proxy: "http://localhost:80/php-ajax-dischi/", 
         files: [
                 "src/js/main.js",
                 "src/scss/main.scss",

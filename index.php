@@ -24,16 +24,16 @@ $main_css = 'dist/assets/css/main.css';
         <main class="main-content">
             <div class="container">
                 <ul class="album-list">
-                    <?php 
-                    foreach($collection as $item) {
-                        echo "<li class='album-list__item'>";
-                        echo    "<img class='album-list__item__cover' src='".$item['cover']."' alt=''>";
-                        echo    "<span class='album-list__item__title'>".$item['title']."</span>";
-                        echo    "<span class='album-list__item__author'>".$item['author']."</span>";
-                        echo    "<span class='album-list__item__year'>".$item['year']."</span>";
-                        echo "</li>";
-                    }
-                    ?>
+                    <?php foreach($collection as $item) { ?>
+                        <li class="album-list__item">
+                            <img class="album-list__item__cover" 
+                                 src="<?php echo $item['cover']; ?>"
+                                 alt="<?php echo $item['title']; ?>">
+                            <span class="album-list__item__title"><?php echo $item['title']; ?></span>
+                            <span class='album-list__item__author'><?php echo $item['author'] ?></span>
+                            <span class="album-list__item__year"><?php echo $item['year']; ?></span>
+                        </li>
+                    <?php } ?>
                 </ul>
             </div>
         </main>
