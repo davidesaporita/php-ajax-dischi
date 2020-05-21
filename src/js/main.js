@@ -51,7 +51,6 @@ $(document).ready( () => {
             author: element.author,
             year:   element.year,
             cover:  element.cover,
-            class:  "album-list__item--show"
         }
 
         var html = template(templateData);
