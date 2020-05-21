@@ -16,12 +16,12 @@ $main_css = 'dist/assets/css/main.css';
 </head>
 <body>
     <div id="app">
+
         <?php include_once __DIR__ . '/partials/templates/header.php' ?>
         <?php include_once __DIR__ . '/partials/templates/main.php' ?>
 
-        <footer class="footer">
-
-        </footer>
+        <footer class="footer"></footer>
+        
     </div>
 </body>
 </html>
