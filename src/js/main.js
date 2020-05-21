@@ -21,7 +21,7 @@ $(document).ready( () => {
             data.forEach((element) => {
                 print(element);
             });
-    });
+        }); 
 
     // Event on keyup (input search)
     $('#search').keyup( function() {
@@ -41,8 +41,7 @@ $(document).ready( () => {
                         print(element);
                     }
                 });
-            } // End of ajax.done()
-        ); // End of ajax
+            }); // End of ajax.done()
     }); // End of Keyup Event
 
     // Print via Handlebars template

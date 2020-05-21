@@ -130,8 +130,7 @@ $(document).ready(function () {
           print(element);
         }
       });
-    } // End of ajax.done()
-    ); // End of ajax
+    }); // End of ajax.done()
   }); // End of Keyup Event
   // Print via Handlebars template
 
