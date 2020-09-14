@@ -1,6 +1,6 @@
 ﻿# Php Ajax Dischi
 
-> Testing with classes in PHP 
+> List of music albums searchable via AJAX calls 
 > <br>Keywords: PHP / AJAX / JSON / HANDLEBARS / SCSS
 
 ## :information_source: Description
