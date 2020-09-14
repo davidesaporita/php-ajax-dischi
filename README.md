@@ -40,3 +40,9 @@ npm install
 npm run watch
 ```
 6. Run project in your local server
+
+## :page_facing_up: License
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
+Copyright 2020 © Davide Saporita
