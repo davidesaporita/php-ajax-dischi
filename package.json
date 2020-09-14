@@ -23,12 +23,13 @@
   },
   "homepage": "https://github.com/davidesaporita/php-ajax-dischi#readme",
   "devDependencies": {
-    "browser-sync": "^2.26.7",
+    "browser-sync": "^2.26.12",
     "browser-sync-webpack-plugin": "^2.0.1",
     "cross-env": "^7.0.2",
-    "laravel-mix": "^5.0.4",
+    "laravel-mix": "^5.0.5",
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2",
+    "serialize-javascript": ">=3.1.0",
     "vue-template-compiler": "^2.6.11"
   }
 }
