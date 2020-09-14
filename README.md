@@ -1,7 +1,7 @@
 ﻿# Php Ajax Dischi
 
 > Testing with classes in PHP 
-> <br>Keywords: PHP / JSON / SCSS
+> <br>Keywords: PHP / AJAX / JSON / HANDLEBARS / SCSS
 
 ## :information_source: Description
 
